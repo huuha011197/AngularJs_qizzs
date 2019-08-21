@@ -1,0 +1,17 @@
+<div class="container" ng-controller="forgot">
+    <div class="row"><br /></div>
+    <div class="row">
+        <div class="alert alert-danger" ng-if="errorMessage != null">{{errorMessage}}</div>
+    </div>
+
+        <form name="fogotPwform">
+            <div class="form-group">
+                email
+                <input type="email" ng-model="fogotPwform.email" class="form-control"
+                    placeholder="email" ng-value="pheonv">
+            </div>
+            <input type="submit" value="check" class="btn btn-success" ng-click="checkemail();">
+        </form>
+
+
+</div>

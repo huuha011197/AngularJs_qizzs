@@ -1,0 +1,13 @@
+<aside ng-controller="asideCtrl" >
+    <div class="card" style="height: 800px; overflow: scroll"ng-if="isLogin() === true">
+        <div class="card-header">
+            <h4> Danh mục môn học</h4>
+        </div>
+        <div  ng-controller="Subject1Ctrl">
+        <div class="list-group" ng-repeat="x in subjects">
+            <a href="#!/takeQuiz/{{x.Id}}" style="margin-bottom: -20px"
+                class="list-group-item list-group-item-action">{{ x.Name }}</a>
+        </div>
+    </div>
+    </div>
+</aside>

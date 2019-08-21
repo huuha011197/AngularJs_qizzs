@@ -1,0 +1,44 @@
+<div class="row" ng-controller='profile'>
+    <div class="col-md-6">
+        <img style="width: 300px"
+            src="https://scontent.fsgn2-4.fna.fbcdn.net/v/t1.0-9/19510250_1586968644707206_7384304757417662397_n.jpg?_nc_cat=101&_nc_oc=AQkSvrRUtT9nueJ3CDR5W7aaymERwnVd3aBHuZbTx7KmAGrnJhH2aVURaovD3BpU3Nw&_nc_ht=scontent.fsgn2-4.fna&oh=130e0d730516fc7378ea32f5760a9119&oe=5E1524C2"
+            alt="">
+    </div>
+    <div class="col-md-6">
+
+        <table class="table table-light">
+            <thead class="thead-light">
+                <tr>
+                    <th>Username</th>
+                    <td>{{students2[0].username}}</td>
+                </tr>
+                <tr>
+                    <th>fullname</th>
+                    <td>{{students2[0].fullname}}</td>
+                </tr>
+                <tr>
+                    <th>email</th>
+                    <td>{{students2[0].email}}</td>
+                </tr>
+                <tr>
+                    <th>gender</th>
+                    <td ng-if="students2[0].gender=='true'"> Male</td>
+                    <td ng-if="students2[0].gender=='false'"> Female</td>
+                </tr>
+                <tr>
+                    <th>birthday</th>
+                    <td>{{students2[0].birthday}}</td>
+                </tr>
+                <tr>
+                    <th>schoolfee</th>
+                    <td>{{students2[0].schoolfee}}</td>
+                </tr>
+                <tr>
+                    <th>marks</th>
+                    <td>{{students2[0].marks}}</td>
+                </tr>
+            </thead>
+        </table>
+        <a href="" class="btn btn-success" > Edit</a>
+    </div>
+</div>
